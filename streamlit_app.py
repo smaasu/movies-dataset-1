@@ -23,7 +23,7 @@ def load_data():
 
 
 df = load_data()
-
+df['gross'] = df['gross']/1000000
 # Show a multiselect widget with the genres using `st.multiselect`.
 genres = st.multiselect(
     "Genres",
